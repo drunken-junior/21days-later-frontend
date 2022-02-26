@@ -16,8 +16,8 @@ function App() {
       todoList.map(function(ele,index){
         return(
           <div key={index}>
-            <span>{ele}</span>&nbsp;&nbsp;&nbsp;
-            <HabitEditForm>편집</HabitEditForm>
+            <HabitEditForm todoList={ele}/>
+              {/* <span>{ele}</span>&nbsp;&nbsp;&nbsp; */}            
             <HabitDeleteForm>삭제</HabitDeleteForm>
           </div>
         )
