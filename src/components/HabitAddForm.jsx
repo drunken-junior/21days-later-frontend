@@ -6,6 +6,7 @@ const HabitAddForm = (props) => {
     const addTodoList = () =>{
         const inputVal = inputRef.current.value;
         props.setTodoList(prevList => [...prevList,inputVal]);
+        inputRef.current.value = ""
     }
 
     return (

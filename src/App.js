@@ -17,8 +17,7 @@ function App() {
         return(
           <div key={index}>
             <HabitEditForm todoList={ele}/>
-              {/* <span>{ele}</span>&nbsp;&nbsp;&nbsp; */}            
-            <HabitDeleteForm>삭제</HabitDeleteForm>
+            <HabitDeleteForm index ={index} todoList={todoList} setTodoList={setTodoList}>삭제</HabitDeleteForm>
           </div>
         )
       })
